@@ -1,4 +1,10 @@
 
+  tailwind.config = {
+    darkMode: 'class',
+  }
+
+
+
 const hamburger= document.getElementById("hamburger");
 const mobileMenu= document.getElementById("mobile-menu");
 
