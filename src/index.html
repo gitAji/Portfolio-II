@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
+
+    <script type="module" src="js/mode.js"></script>
+</head>
+
+<body class="font-poppins box-border m-0 md:text-lg">
+    <section class="min-h-screen bg-white dark:bg-gray-800 dark:text-white" id="home">
+        <!--nav bar-->
+        <nav class="bg-cyan-100  dark:bg-gray-700 dark:text-white">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="relative flex h-16 items-center z-10">
+                    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                        <!-- Mobile menu button-->
+                        <button type="button"
+                            class="inline-flex items-center justify-center p-2 text-gray-800 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500"
+                            aria-controls="mobile-menu" aria-expanded="false" id="hamburger">
+                            <span class="sr-only">Open main menu</span>
+
+                            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+
+                            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
+                        <div class="flex flex-shrink-0 items-center">
+                            <a href="index.html">
+                            <img class="block h-12 w-auto lg:hidden" src="./img/logo.png" alt="logo" />
+                            <img class="hidden h-12 w-auto lg:block" src="./img/logo.png" alt="logo" />
+                        </a>
+                        </div>
+                        <div class="hidden sm:ml-6 sm:block">
+                            <div class="flex space-x-4 leading-relaxed">
+                                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                                <a href="#home" class="bg-gray-900 text-white px-3 py-2 text-sm font-medium uppercase"
+                                    aria-current="page">Home</a>
+
+                                <a href="#skills"
+                                    class="text-gray-400 hover:bg-cyan-500 dark:hover:bg-slate-400 hover:text-white px-3 py-2 text-sm font-medium uppercase">Skills</a>
+
+                                <a href="#works"
+                                    class="text-gray-400 hover:bg-cyan-500 dark:hover:bg-slate-400 hover:text-white px-3 py-2 text-sm font-medium uppercase">Works</a>
+
+                                <a href="#getintouch"
+                                    class="text-gray-400 hover:bg-cyan-500 hover:text-white dark:hover:bg-slate-400 px-3 py-2 text-sm font-medium uppercase">Get
+                                    In Touch</a>
+                                
+                            </div>
+                        </div></div>
+                        <div class=""><button
+                            id="theme-toggle"
+                            type="button"
+                            class="text-gray-500 dark:text-gray-400 hover:none dark:hover:none  focus:outline-none hover:bg-slate-200 dark:hover:bg-cyan-200  text-sm px-5 py-2"
+                          >
+                            <svg
+                              id="theme-toggle-dark-icon"
+                              class="w-5 h-5 hidden"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                              ></path>
+                            </svg>
+                            <svg
+                              id="theme-toggle-light-icon"
+                              class="w-5 h-5 hidden"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </button></div>
+                    
+                    <div
+                        class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="hidden" id="mobile-menu">
+                <div class="space-y-1 px-2 pt-2 pb-3">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                    <a href="#home" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium uppercase"
+                        aria-current="page">Home</a>
+
+                    <a href="#skills"
+                        class="text-gray-400 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium uppercase">Skills</a>
+
+                    <a href="#works"
+                        class="text-gray-400 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium uppercase">Projects</a>
+
+                    <a href="#getintouch"
+                        class="text-gray-400 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium uppercase">Get
+                        In Touch</a>
+                </div>
+            </div>
+        </nav>
+        <!--nav bar ends-->
+        <div class="relative">
+            <div class="md:flex p-10  bg-gray-50 dark:bg-gray-800 dark:text-white justify-between items-center z-10 relative bottom-0" )>
+                <!--bg layer-->
+                <div
+                    class="absolute z-0 inset-0 bg-gradient-to-r from-cyan-50 to bg-cyan-100 shadow-md transform-skew-y-0 sm:skew-y-10 rotate-0 m-auto top-10 w-full h-full hidden">
+                </div>
+                <div class="md:w-7/12  text-justify z-10">
+                    <p class="text-lg uppercase">
+                        I am
+                        <p class=" text-2xl font-bold text-gray-800 dark:text-white pt-1 uppercase tracking-wider z-10">
+                            Ajeerathan Kumarasamy
+                        </p>
+                    </p>
+
+                    <p class="text-lg md:w-11/12 pt-2 leading-relaxed ">
+                        Currently learn to
+                       code at Noroff Bergen. I am a nature lover 
+                        with a passion for creating beautiful and functional websites. I
+                        have a passion for learning new
+                        technologies and constantly
+                        learning new things.
+                    </p>
+                    <div>
+                        <p class="text-lg md:w-11/12 pt-3 leading-relaxed">
+                            On this website you can find my projects, skills and contact me.
+                            I have included the GitHub and live demo link to all my
+                            projects. I am currently looking for a job as a junior web
+                                developer or UX designer role and I am
+                            open to any opportunities.
+                        </p>
+                    </div>
+                </div>
+                <div class="md:w-1/4 p-2 relative">
+                    <div class="hidden lg:flex">
+                        <!--<div
+                            class="bg-cyan-100 dark:bg-slate-200  overflow-hidden flex items-center justify-center absolute z-10 w-60 h-60  right-1 bottom-0">
+                        </div>
+                        
+                        <div
+                            class="bg-red-50 dark:bg-slate-100  overflow-hidden flex items-center justify-center absolute z-10 w-60 h-60  rounded-full -left-5 -bottom-3">
+                        </div>
+                        <div
+                            class="bg-indigo-50 dark:bg-slate-100 overflow-hidden flex items-center justify-center absolute z-10 w-50 h-50  right-5 top-0">
+                        </div>
+                        <div
+                            class="bg-yellow-50  dark:bg-gray-50 overflow-hidden flex items-center justify-center absolute z-10 w-60 h-60  rounded-full right-0 top-5">
+                        </div>
+                        <div
+                            class="bg-emerald-50 dark:bg-gray-200 overflow-hidden flex items-center justify-center absolute z-10 w-60 h-60  skew-x-1 left-0 top-0">
+                        </div>
+                       -->
+                    </div>
+                    <div
+                        class="absolute hidden inset-0 bg-gradient-to-r from-cyan-100 to bg-green-50 shadow-md transform-skew-y-30 sm:skew-y-2 rotate-0 m-auto ">
+                    </div>
+                    <div>
+                    <img src="./img/me.png" alt="" srcset=""
+                        class="scale-75 hover:scale-50 rounded-full flex-shrink-0 object-cover z-10 relative" />
+                    </div>
+                    </div>
+                <div
+                    class="flex md:flex-col  gap-10 align-center justify-content-center bg-slate-100 dark:bg-gray-800 dark:text-white p-4 cursor-pointer">
+                    <ion-icon size="large" name="logo-linkedin" class="hover:bg-cyan-500 dark:hover:bg-slate-400 hover:text-white"></ion-icon>
+                    <ion-icon size="large" name="logo-github" class="hover:bg-cyan-500 dark:hover:bg-slate-400 hover:text-white"></ion-icon>
+                    <ion-icon size="large" name="logo-codepen" class="hover:bg-cyan-500 dark:hover:bg-slate-400 hover:text-white"></ion-icon>
+                    <ion-icon size="large" name="logo-behance" class="hover:bg-cyan-500 dark:hover:bg-slate-400 hover:text-white"></ion-icon>
+                    <ion-icon size="large" name="logo-instagram" class="hover:bg-cyan-500 dark:hover:bg-slate-400 hover:text-white"></ion-icon>
+
+                </div>
+            </div>
+        </div>
+        <div class="flex p-8 justify-center align-bottom gap-5 justify-items-center align-middle">
+            <a href="./downloads/CV.pdf"><button
+                    class="text-white bg-gray-300 dark:bg-slate-500  hover:bg-white dark:hover:bg-white hover:border-cyan-300 dark:hover:border-slate-500 outline-dotted hover:text-cyan-500 dark:hover:text-black  active:bg-cyan-600 dark:active:bg-black font-bold uppercase px-8 py-5  mr-1 mb-1 ease-linear transition-all duration-150 mt-3"
+                    type="button">
+                    Download CV
+                </button>
+            </a>
+            <a href="#skills"><button
+                    class=" animate-bounce  text-cyan-500 border dark:text-black border-cyan-500 dark:border-slate-500 outline-dotted hover:bg-cyan-500 dark:hover:bg-slate-800 hover:text-white dark:hover:text-white active:bg-cyan-600 font-bold uppercase px-8 py-5 rounded   mr-1 mb-1 ease-linear transition-all duration-150 mt-3 border-none"
+                    type="button">
+                    Skills Set
+                </button>
+            </a>
+        </div>
+    </section>
+    <section class="min-h-screen bg-red-50 dark:bg-gray-800 relative z-0" id="skills">
+        <div>
+            <h1 class="section-heading sm:text-4xl font-bold text-gray-800 dark:text-white p-2 text-center px-1 uppercase relative z-10">
+                Skills <hr class="mx-11 my-2">
+            </h1>
+        </div>
+        <div class="absolute">
+            <svg viewBox="0 0 330 42" class="relative">
+                <g class="grid grid-cols-20 grid-rows-2">
+                  <circle class="col-span-1 row-span-1 rounded-full h-3 w-3 bg-green-500" cx="5" cy="5"></circle>
+                  <circle class="col-span-1 row-span-1 rounded-full h-3 w-3 bg-green-500" cx="25" cy="5"></circle>
+                  <circle class="col-span-1 row-span-1 rounded-full h-3 w-3 bg-green-500" cx="45" cy="5"></circle>
+                  <!-- and so on ... -->
+                  <circle class="col-span-1 row-span-1 rounded-full h-3 w-3 bg-green-500" cx="315" cy="5"></circle>
+                  <circle class="col-span-1 row-span-1 rounded-full h-3 w-3 bg-green-500" cx="335" cy="5"></circle>
+                </g>
+              </svg>
+              
+          </div>
+
+        <div class="flex flex-wrap justify-center content-end z-10 relative">
+            <div class="w-1/3 p-3 ">
+                <div class="bg-white shadow-md p-5">
+                    <div class="flex justify-center">
+                        <ion-icon name="logo-html5" size="large"></ion-icon>
+                    </div>
+                    <div class="flex justify-center">
+                        <h1 class="md:text-2xl font-bold text-gray-800 pt-1">HTML</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/3 p-3">
+                <div class="bg-white shadow-md p-5">
+                    <div class="flex justify-center">
+                        <ion-icon name="logo-css3" size="large"></ion-icon>
+                    </div>
+                    <div class="flex justify-center">
+                        <h1 class="md:text-2xl font-bold text-gray-800 pt-1">CSS</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/3 p-3">
+                <div class="bg-white shadow-md p-5">
+                    <div class="flex justify-center">
+                        <ion-icon name="logo-javascript" size="large"></ion-icon>
+                    </div>
+                    <div class="flex justify-center">
+                        <h1 class="md:text-2xl font-bold text-gray-800 pt-1">JavaScript</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/3 p-3">
+                <div class="bg-white shadow-md p-5">
+                    <div class="flex justify-center">
+                        <ion-icon name="logo-web-component" size="large"></ion-icon>
+                    </div>
+                    <div class="flex justify-center">
+                        <h1 class="md:text-2xl font-bold text-gray-800 pt-1">Bootstrap</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/3 p-3">
+                <div class="bg-white shadow-md p-5">
+                    <div class="flex justify-center">
+                        <ion-icon name="logo-github" size="large"></ion-icon>
+                    </div>
+                    <div class="flex justify-center">
+                        <h1 class="md:text-2xl font-bold text-gray-800 pt-1">Tailwind</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/3 p-3">
+                <div class="bg-white shadow-md p-5">
+                    <div class="flex justify-center">
+                        <ion-icon name="logo-sass" size="large"></ion-icon>
+                    </div>
+                    <div class="flex justify-center">
+                        <h1 class="md:text-2xl font-bold text-gray-800 pt-1">SASS</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/3 p-3">
+                <div class="bg-white shadow-md rounded-lg p-5">
+                    <div class="flex justify-center">
+                        <ion-icon name="logo-wordpress" size="large"></ion-icon>
+                    </div>
+                    <div class="flex justify-center">
+                        <h1 class="md:text-2xl font-bold text-gray-800 pt-1">Wordpress</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/3 p-3">
+                <div class="bg-white shadow-md p-5">
+                    <div class="flex justify-center">
+                        <ion-icon name="logo-steam" size="large"></ion-icon>
+                    </div>
+                    <div class="flex justify-center">
+                        <h1 class="md:text-2xl font-bold text-gray-800 pt-1">Rest API</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/3 p-3">
+                <div class="bg-white shadow-md p-5">
+                    <div class="flex justify-center">
+                        <ion-icon name="logo-react" size="large"></ion-icon>
+                    </div>
+                    <div class="flex justify-center">
+                        <h1 class="md:text-2xl font-bold text-gray-800 pt-1">React</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/3 p-3">
+                <div class="bg-white shadow-md p-5">
+                    <div class="flex justify-center">
+                        <ion-icon name="code-working-outline" size="large"></ion-icon>
+                    </div>
+                    <div class="flex justify-center">
+                        <h1 class="md:text-2xl font-bold text-gray-800 pt-1">PHP</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/3 p-3">
+                <div class="bg-white shadow-md p-5">
+                    <div class="flex justify-center">
+                        <ion-icon name="logo-Npm" size="large"></ion-icon>
+                    </div>
+                    <div class="flex justify-center">
+                        <h1 class="md:text-2xl font-bold text-gray-800 pt-1">NPM</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/3 p-3">
+                <div class="bg-white shadow-md p-5">
+                    <div class="flex justify-center">
+                        <ion-icon name="logo-Figma" size="large"></ion-icon>
+                    </div>
+                    <div class="flex justify-center">
+                        <h1 class="md:text-2xl font-bold text-gray-800 pt-1">Figma</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="flex p-5 justify-around align-items-center">
+                <a href="#works"><button
+                    class=" animate-bounce  text-cyan-500 border dark:text-black border-cyan-500 dark:border-slate-500 outline-dotted hover:bg-cyan-500 dark:hover:bg-black hover:text-white dark:hover:text-white active:bg-cyan-600 font-bold uppercase px-8 py-5 rounded   mr-1 mb-1 ease-linear transition-all duration-150 mt-3 border-none"
+                        type="button">
+                        Check Out My Works
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="min-h-screen bg-emerald-50 dark:bg-gray-800" id="works">
+        <div>
+            <h1 class="sm:text-4xl font-bold text-gray-800 dark:text-white p-5 text-center px-1 uppercase">
+                Works <hr class="mx-11 my-10">
+            </h1>
+        </div>
+        
+        <!--projects-->
+        <div class="grid md:grid-cols-3 gap-5 p-5 align-middle">
+            <div class="">
+                <img src="./img/Fakebook.png" alt="" loading="lazy" class="dark:grayscale hover:animate-pulse "/>
+                <div class="grid content-center">
+                    <button
+                    class="bg-transparent dark:bg-slate-400 hover:bg-cyan-500 dark:hover:bg-gray-800 text-cyan-700 font-bold dark:text-white hover:text-white dark:hover:text-gray-300 py-4 px-2 border border-cyan-500 dark:border-none hover:border-transparent" id="view" data-project-id="1" >
+                    View
+                    </button>
+                </div>
+            </div>
+            <!--project ends-->
+            <div class="">
+                <img src="./img/Portfolio.png" alt="" loading="lazy"  class="dark:grayscale hover:animate-pulse"/>
+                <div class="grid content-center">
+                    <button
+                    class="bg-transparent dark:bg-slate-400 hover:bg-cyan-500 dark:hover:bg-gray-800 text-cyan-700 font-bold dark:text-white hover:text-white dark:hover:text-gray-300 py-4 px-2 border border-cyan-500 dark:border-none hover:border-transparent" id="view" data-project-id="2">
+                    View
+                    </button>
+                </div>
+            </div>
+            <!--project ends-->
+            <div class="">
+                <img src="./img/ibuy.png" alt="" loading="lazy" class="dark:grayscale hover:animate-pulse" />
+                <div class="grid content-center">
+                    <button
+                    class="bg-transparent dark:bg-slate-400 hover:bg-cyan-500 dark:hover:bg-gray-800 text-cyan-700 font-bold dark:text-white hover:text-white dark:hover:text-gray-300 py-4 px-2 border border-cyan-500 dark:border-none hover:border-transparent" id="view" data-project-id="3">
+                    View
+                    </button>
+                </div>
+            </div>
+            <!--project ends-->
+        </div>
+        <!--works section ends here-->
+          <!-- Modal content goes here -->
+          <div class="fixed hidden inset-0 bg-gray-500 z-30 dark:bg-gray-300 min-h-screen  ">
+          <div class="flex justify-between  p-5 sm:max-w-lg sm:max-h-screen sm:mx-auto sm:my-2   bg-gray-200 dark:bg-gray-600  shadow-sm shadow-gray">
+            <button
+              class="absolute animate-pulse top-1 right-1 bg-gray-400 hover:bg-black px-2 m-2 text-gray-600 hover:text-white text-lg"
+              id="box"
+            >
+              X
+            </button>
+            <!-- Modal content goes here -->
+            <div class="text-black dark:text-white" id="project-modal">
+              loading...
+            </div>  
+        </div>
+    </div>
+<!-- Modal content ends here -->
+
+
+        <div class="flex p-8 justify-around align-items-center">
+            <a href="#getintouch"><button
+                class=" animate-bounce  text-cyan-500 border dark:text-black border-cyan-500 dark:border-slate-500 outline-dotted hover:bg-cyan-500 dark:hover:bg-black hover:text-white dark:hover:text-white active:bg-cyan-600 font-bold uppercase px-8 py-5 rounded   mr-1 mb-1 ease-linear transition-all duration-150 mt-3 border-none"
+                type="button">
+                    Get In Touch
+                </button>
+            </a>
+        </div>
+    </section>
+    <section class="min-h-screen bg-yellow-50 dark:bg-gray-800" id="getintouch">
+        <div>
+            <h1 class="sm:text-4xl font-bold text-gray-800 dark:text-white dark:bg-gray-800 p-5 text-center px-1 uppercase">
+                Get In Touch <hr class="mx-11 my-5">
+            </h1>
+        </div>
+        <div class="flex flex-col md:flex-row justify-center gap-2 m-3">
+        <div class="bg-red-300 dark:bg-gray-400 p-5 w-100">
+     
+        </div>   
+        <div class="flex justify-center gap-2">
+            <form class="px-5 pb-5 shadow-lg " id="contact-from">
+               <input type="alert"  class="bg-yellow-50 dark:bg-gray-800 py-2" id="user-message" value="">
+                  <input class="form-input bg-yellow-50 dark:bg-gray-800 w-full py-2 px-3 text-gray-500 dark:text-white leading-wider  border-b-2  border-0 border-b-red-200 mb-10 dark:border-gray-800 dark:border-b-black  autofill:none focus:outline-none focus:ring-black focus:ring-0  placeholder:tracking-widest  " id="name" type="text" placeholder="Enter your name">
+               
+               
+                  <input class="form-input bg-yellow-50 dark:bg-gray-800 w-full py-2 px-3 text-gray-700 dark:text-white leading-wider border-b-2 border-0 border-b-red-200 mb-10 dark:border-gray-800 dark:border-b-black focus:outline-none focus:ring-black focus:ring-0  autofill:none placeholder:tracking-widest" id="email" type="email" placeholder="Enter your email address">
+               
+        
+                  <textarea class="form-input bg-yellow-50 dark:bg-gray-800 w-full py-2 px-3 text-gray-700 dark:text-white leading-wider border-b-2  border-0 border-b-gray-500  mb-10 dark:border-gray-800 dark:border-b-black focus:outline-none focus:ring-black focus:ring-0 placeholder:tracking-widest" id="message" rows="4" placeholder="Enter your message"></textarea>
+              
+                <button class="text-cyan-500 border border-cyan-500 dark:border-black hover:bg-cyan-500 dark:hover:bg-black hover:text-white active:bg-cyan-600 dark:text-black dark:hover:text-white font-bold uppercase px-8 py-5 outline-none tracking-widest " id="send">Send</button>
+              </form>
+              
+
+        </div> 
+        </div>
+   
+        <footer class="p-4">
+            <div class="px-2">
+                <hr class="dark:bg-gray-500">
+               <p class="m-auto py-1">Copyright © <script>document.write(new Date().getFullYear())</script></p>
+            </div>
+            <div class="flex p-8 position:fixed cursor-pointer top-1 justify-end " id="backToTop">
+                <a href="#home">
+                    <ion-icon name="caret-up-outline" class="bg-cyan-400 hover:bg-cyan-600 text-2xl dark:bg-slate-300 dark:hover:bg-slate-600"></ion-icon>
+                </a>
+            </div>
+           </footer>
+    </section>
+   
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="js/script.js"></script>
+<script src="js/project.js"></script>
+<script src="../path/to/flowbite/dist/flowbite.bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+
+</html>
