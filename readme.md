@@ -20,7 +20,8 @@
 [![License](https://img.shields.io/badge/license-MIT-ec9716.svg)](https://opensource.org/licenses/MIT)
 #
 # Design
-<img width="220" alt="Screenshot 2023-01-22 at 10 32 10" src="https://user-images.githubusercontent.com/89026824/213909048-7785808e-1094-477f-ae6c-4fbee902239f.png">
+<img width="944" alt="Screenshot 2023-01-22 at 23 14 54" src="https://user-images.githubusercontent.com/89026824/213943296-f67d0163-ab6c-40dd-99fa-130103556ae5.png">
+
 
 # About
 
