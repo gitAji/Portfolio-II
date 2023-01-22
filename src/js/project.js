@@ -2,8 +2,8 @@
   const projectsArray = [
     {
       "id": 1,
-      "title": "E-commerce Website",
-      "description": "A fully functional e-commerce website with a user-friendly interface and secure payment gateway.",
+      "title": "A Social Media Site",
+      "description": "A functional Social media site with user registration and post management functionality.",
       "image": "./img/Fakebook.png",
       "requirements": [
         "User with @noroff.no or @stud.noroff.no email can register profile",
@@ -27,7 +27,7 @@
       "description": "A portfolio site to show the projects are build during the semester one.",
       "image": "./img/Portfolio.png",
       "requirements": ["Well structured", "User Friendly", "Nice Design"],
-      "deliverables": ["Fully designed and developed mobile app", "User manual and training for app maintenance"],
+      "deliverables": ["Fully designed and developed site", "3 Portfolios"],
       "technologies": ["HTML", "CSS", "JavaScript"],
       "tools": ["Figma", "VSCode", "Netlify"],
       "github_link": "https://github.com/gitAji/Personal-site",
