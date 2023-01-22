@@ -4,7 +4,7 @@
 <p align="center">
   •<a href="#design">Design</a> •
     <a href="#about">About</a> •
-  <a href="#issues">Issues</a> •
+  <a href="#requirements">Requirements</a> •
 <a href="#links">Links</a>•
     <a href="#references">References</a>•
   <a href="#license">License</a>
@@ -20,6 +20,7 @@
 [![License](https://img.shields.io/badge/license-MIT-ec9716.svg)](https://opensource.org/licenses/MIT)
 #
 # Design
+<img width="220" alt="Screenshot 2023-01-22 at 10 32 10" src="https://user-images.githubusercontent.com/89026824/213909048-7785808e-1094-477f-ae6c-4fbee902239f.png">
 
 # About
 
@@ -42,8 +43,9 @@ Welcome to my portfolio site! This site showcases my work and skills as a design
 
 # Links
 [Live Demo](https://ajee2.netlify.app/)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6a5b58b9-c549-4394-bac3-feff7e8513d0/deploy-status)](https://app.netlify.com/sites/ajee2/deploys)
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6a5b58b9-c549-4394-bac3-feff7e8513d0/deploy-status)](https://app.netlify.com/sites/ajee2/deploys) <br>
+[Figma](https://www.figma.com/file/BlRO7MT9Wb9lJGvM9DN1rc/Portfolio-II?node-id=0%3A1&t=d0uMfecn7m2h8uYv-1)<br>
+[GitHub](https://github.com/gitAji/Portfolio-II/)
 # References 
 [Modal using Tailwind CSS](https://codepen.io/iamsahilvhora/pen/LYYxQJw)
 
