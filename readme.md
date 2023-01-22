@@ -23,14 +23,29 @@
 
 # About
 
-This a portfolio site designed using HTML,Tailwind & JS.
+Welcome to my portfolio site! This site showcases my work and skills as a designer & developer.
 
-# Issues
+# Requirements 
+<li>Consider the target audience and their likely personas.</li>
+<li>Research other portfolio websites for ideas.</li>
+<li>Choose what you want to highlight for your portfolio. Is your portfolio programming-focused or design-focused?
+</li>
+<li>Decide on the content architecture for the site. How many pages should it have and which projects should make up the portfolio?
+</li>
+<li>Create a wireframe for the site.
+</li>
+<li>Create an Figma prototype of the website.
+</li>
+<li>The process you follow for the development of your site is up to you. The site should be mobile responsive and display work you have done.
+</li>
+
 
 # Links
-[Live Demo](www.example.com)
+[Live Demo](https://ajee2.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6a5b58b9-c549-4394-bac3-feff7e8513d0/deploy-status)](https://app.netlify.com/sites/ajee2/deploys)
 
 # References 
+[Modal using Tailwind CSS](https://codepen.io/iamsahilvhora/pen/LYYxQJw)
 
 # License 
 Completely free [MIT](https://opensource.org/licenses/MIT).
